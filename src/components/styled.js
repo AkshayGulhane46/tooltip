@@ -71,14 +71,6 @@ export const CenterContainer = styled.div`
   }}
 `;
 
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
 
 export const TooltipBox = styled.span`
   position: relative;
@@ -98,25 +90,13 @@ export const TooltipBox = styled.span`
         return css``;
     }
   }}
-  /* animation: ${fadeIn} 1s linear; */
-  &:after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #${(props) =>
-      props.background} transparent transparent transparent;
-    left: calc(50% - 4.5px);
-    top: 100%;
-  }
+
   ${({ position }) => {
     switch (position) {
       case "bottom":
         return css`
           &:after {
-            border-color: transparent transparent #${(props) =>
+            border-color: black;
                 props.background} transparent;
             top: unset;
             width: 1px;
@@ -127,7 +107,7 @@ export const TooltipBox = styled.span`
       case "left":
         return css`
           &:after {
-            border-color: transparent transparent transparent #${(props) => props.background};
+            border-color: black;
             left: 100%;
             top: calc(50% - 5px);
           }
@@ -135,7 +115,7 @@ export const TooltipBox = styled.span`
       case "right":
         return css`
           &:after {
-            border-color: transparent #${(props) => props.background} transparent
+            border-color: black;
               transparent;
             right: 100%;
             left: unset;
