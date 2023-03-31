@@ -14,7 +14,7 @@ export const TooltipTarget = styled.button`
   ${({ styleMe }) =>
     styleMe &&
     css`
-      padding: 15px;
+      padding: 10px;
       margin: 1px;
       border-radius: 5px;
       font-size: 2rem;
