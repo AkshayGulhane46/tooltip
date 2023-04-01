@@ -11,6 +11,7 @@ export const TooltipTarget = styled.button`
   padding: 5px;
   margin: -1px;
   font-size: inherit;
+  
   ${({ styleMe }) =>
     styleMe &&
     css`
@@ -97,7 +98,7 @@ export const TooltipBox = styled.span`
         return css`
           &:after {
             border-color: black;
-                props.background} transparent;
+            props.background} transparent;
             top: unset;
             width: 1px;
             bottom: 100%;
@@ -116,7 +117,6 @@ export const TooltipBox = styled.span`
         return css`
           &:after {
             border-color: black;
-              transparent;
             right: 100%;
             left: unset;
             top: calc(50% - 5px);

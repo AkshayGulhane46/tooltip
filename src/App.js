@@ -9,7 +9,7 @@ export default function App() {
     <div className="App">
 
       <Tooltip text="Thanks for hovering! i'm a tooltip" position="left" background="393e46">
-        <TooltipTarget>Hover over me</TooltipTarget>
+        <TooltipTarget><u>Hover over me</u></TooltipTarget>
       </Tooltip>
       
     </div>
