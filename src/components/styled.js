@@ -26,7 +26,7 @@ export const TooltipTarget = styled.button`
   ${({ showOnFocus }) =>
     !showOnFocus &&
     css`
-      outline: none;
+      outline: 1px solid black;
     `};
 `;
 
